@@ -12,13 +12,15 @@
 <body>
 
 
-    <div class="pop-up">
+    <div class="pop-up" id="pop-up">
         <div class="pop-up-container">
             <div class="pop-up-content">
                 <h3 class="pop-up-header">Оформити заявку на отримання "Avocardine"</h3>
-                <button class="pop-up-btn">Перейти до форми</button>
+                <div class="pop-up-img-product">
+                    <img src="images/product.jpg" alt="Avocardine">
+                </div>
+                <button class="pop-up-btn" id="btn-pop-up">Перейти до форми</button>
             </div>
-
         </div>
     </div>
 
@@ -32,9 +34,10 @@
         <header>
             <div class="container">
                 <div class="date-logo">
-                    <div class="logo">
+
+                    <a href="#" class="logo">
                         <img src="./images/logo.svg" alt="ГОЛОВНЕ УКРАЇНА">
-                    </div>
+                    </a>
                     <div class="date">
                         КОЖНУ<br>
                         <span>СУБОТУ</span><br>
@@ -57,8 +60,8 @@
                         Немає сенсу витрачати кошти на старих!" <br>
                     </h1>
 
-                    <span class="copy-date text-grey">&copy; Зам. гол. фармацевта України Опублiковано: *дата - 5
-                        дней*</span>
+                    <span class="copy-date text-grey">&copy; Зам. гол. фармацевта України Опублiковано: <span
+                            id="main-data-page"></span></span>
                 </div>
                 <section>
                     <p class="title-29 fb-header">Декілька днів тому в соціальних мережах широко розлетівся
@@ -137,8 +140,10 @@
 
 
                 <section class="conspiracy">
-                    <div class="main-img-conspiracy">
-                        <div class="logo-conspiracy">
+                    <div class="doctor-img-main main-img-conspiracy">
+                        <img src="images/main-conspiracy.jpg" alt="conspiracy">
+
+                        <div class="logo-doctor-main">
                             <img src="images/logo.svg" alt="ГОЛОВНЕ УКРАЇНА">
                         </div>
 
@@ -153,8 +158,8 @@
                             </div>
 
                         </div>
-
                     </div>
+
                     <p class="header-news-conspiracy text-red title-25 ">
                         Максим Кротов: Як така людина може працювати в державних установах?
                         За чий рахунок вона купила собі котедж в Конча-Заспі і регулярно відпочиває
@@ -201,7 +206,7 @@
                         керівництва потрібно переглянути.
                     </p>
 
-                    <p class="doctor-coom-strong"><strong class="author-name "></strong>Максим Кротов:</strong> "Тобто
+                    <p class="doctor-coom-strong"><strong class="author-name ">Максим Кротов:</strong> "Тобто
                         звільнили не тільки її,але і все керівництво в цілому? Які рішення Ви маєте на увазі? Можете
                         навести приклад?"</p>
 
@@ -226,7 +231,8 @@
                         потягне такі витрати?"
                     </p>
 
-                    <p class="doctor-coom"><strong class="author-name ">Ірина Панкратова:</strong> 10 тисяч, це та
+                    <p class="doctor-coom text-25"><strong class="author-name ">Ірина Панкратова:</strong> 10 тисяч, це
+                        та
                         вартість, яку вони виставили французам, а ті погодилися. Тут Говорова була права, за кордоном
                         дійсно готові платити практично будь-які гроші.
                         <br>
@@ -266,7 +272,7 @@
                         </div>
                     </div>
 
-                    <p class="doctor-coom">
+                    <p class="doctor-coom text-25">
                         <strong class="author-name ">Дмитро Неділько: </strong>Ці ліки над яким більше десяти років
                         працювала команда НДІ кардіології та внутрішніх хвороб. На виході вийшов унікальний препарат,
                         який здатний повністю оздоровити серцево-судинну систему людини. Грубо кажучи, повернути її в
@@ -279,26 +285,26 @@
                         <strong class="author-name ">Максим Кротов: </strong>"А що саме він робить?"
                     </p>
 
-                    <p class="doctor-coom">
+                    <p class="doctor-coom text-25">
                         <strong class="author-name ">Дмитро Неділько:</strong> Це комплексні ліки, які діють на всю
                         серцево-судинну систему разом, одночасно вирішуючи кілька завдань:
                     </p>
                     <br>
-                    <ul class="list-medicine doctor-coom">
+                    <ul class="list-medicine doctor-coom text-25">
                         <li>
                             <strong class="author-name ">•Повністю очищає судини від забруднення, і розчиняє
                                 тромби.</strong> Холестерин, жирові нашарування, пробки з тромбів - все це йде в минуле.
                             Що важливо очищається, в тому числі ішемічна артерія, що знижує до нуля ризик інфаркту
-                            міокарда.
+                            міокарда.<br>
                         </li>
-                        <br>
+                        
                         <li>
                             <strong class="author-name ">•Запускає процес регенерації серцевого м'яза.</strong>
                             Відбувається відновлення пошкоджених областей, приходять в норму серцеві клапани, зазвичай
-                            сильно страждають через гіпертонію.
+                            сильно страждають через гіпертонію.<br>
 
                         </li>
-                        <br>
+                        
                         <li>
                             <strong class="author-name ">•Відновлює пошкоджені стінки судин і зміцнює їх.</strong>
                             Запобігається ризик розриву судин і крововиливу в мозок. В цілому судини стають повністю
@@ -308,7 +314,7 @@
                     </ul>
                     <br>
 
-                    <p class="doctor-coom">
+                    <p class="doctor-coom text-25">
                         Як результат, відбувається повне відновлення серцево-судинної системи людини. А вона сама
                         повертається в абсолютно здоровий стан. Як підтвердили багатоступінчасті клінічні випробування,
                         ліки допомагають навіть в разі вкрай важкого стану пацієнта. Якщо у вас одночасно присутня
@@ -323,7 +329,7 @@
                         Поясніть?"
                     </p>
 
-                    <p class="doctor-coom">
+                    <p class="doctor-coom text-25">
                         <strong class="author-name ">Дмитро Неділько:</strong> Ось тому, причиною майже 70% смертей є
                         захворювання серця і судин. Тому що кожен думає, що підвищений тиск це нормально.
                         <br>
@@ -343,7 +349,7 @@
                         небезпечний?"
                     </p>
 
-                    <p class="doctor-coom">
+                    <p class="doctor-coom text-25">
                         <strong class="author-name ">Дмитро Неділько:</strong> Якщо викладати зовсім коротко, то тиск
                         починає підвищуватися через застій крові
                         в малих артеріях. Організму потрібно проштовхнути кров з потрібною швидкістю далі і він таким
@@ -397,7 +403,7 @@
                         І якщо пропозиція комерційно не вигідна, то ми маємо повне право її відхилити.
                     </p>
 
-                    <p class="doctor-coom">
+                    <p class="doctor-coom text-25">
                         <strong class="author-name ">Дмитро Неділько:</strong> У вас не просто приватний бізнес. Від
                         нього залежить
                         життя людей. Адже саме вони купують у вас ліки. Ви ж продаєте свідомо неефективні препарати,
@@ -522,7 +528,7 @@
                         внутрішніх захворювань залишилося тільки 44 упаковки препарату з першої партії, профінансованої
                         за квотою.</p>
 
-                    <div class="form">
+                    <div class="form" id="form-scroll">
                         <div class="container-form">
                             <div class="logo-form">
                                 <img src="images/logo-form.jpg" alt="Symbols of pharmacy">
@@ -536,12 +542,14 @@
                                 На бесплатное получение "Avocardine" по специальной программе
                             </p>
 
+                            <div class="text-red title-25" id="timer"></div>
+
                             <p class="attention-form">
                                 Чтобы получить "Avocardine" впишите ваше Имя и контрактный Телефон в поля ниже и нажмите
                                 на кнопку "ПОЛУЧИТЬ БЕСПЛАТНО"
                             </p>
 
-                            <form class="form-submit" action="">
+                            <form class="form-submit" >
                                 <div class="form-section-input">
                                     <label for="name">ВАШЕ ИМЯ:</label>
                                     <input type="text" id="name" placeholder="Укажите Ваше имя">

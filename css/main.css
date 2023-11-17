@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Montserrat-regular';
   src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
@@ -167,26 +168,49 @@ h6 {
 }
 
 header {
-  background: url(../images/header-bg.jpg) 100% 100% no-repeat;
+  background: url('../images/header-bg.jpg') 100% 100% no-repeat;
   background-size: cover;
   margin-bottom: 48.96px;
   max-height: 502px;
 }
 
 .container {
-  max-width: 1064px;
+  max-width: 1104px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+
+.main-person {
+  position: absolute;
+  top: 0;
+  right: -135px;
 }
 
 .date-logo {
   padding: 27.56px 0 23.67px 86.43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  width: 410px;
+  height: 159px;
+  margin-bottom: 116px;
 }
 
 .date {
@@ -243,6 +267,9 @@ header .container {
   margin-bottom: 50px;
 }
 
+.main-person img {
+  max-width: none;
+}
 
 .subtitle-post {
   margin-top: 132.5px;
@@ -250,6 +277,8 @@ header .container {
 }
 
 .post {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#3a82f0), color-stop(#2f74e2), color-stop(#2366d4), color-stop(#1558c6), to(#014bb8));
+  background-image: -o-linear-gradient(left top, #3a82f0, #2f74e2, #2366d4, #1558c6, #014bb8);
   background-image: linear-gradient(to right bottom, #3a82f0, #2f74e2, #2366d4, #1558c6, #014bb8);
   padding: 18.37px 20.83px;
   max-width: 735px;
@@ -264,8 +293,12 @@ header .container {
 }
 
 .user-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 36.75px;
 }
 
@@ -286,6 +319,8 @@ header .container {
 }
 
 .date-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #6C6C6C;
   line-height: 24.94px;
@@ -314,10 +349,17 @@ header .container {
 }
 
 .reaction-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5), -2px 0px 8px rgba(0, 0, 0, 0.25);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5), -2px 0px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5), -2px 0px 8px rgba(0, 0, 0, 0.25);
 
 
 
@@ -328,21 +370,24 @@ header .container {
   padding: 18.38px 24.65px 17.15px 14.7px;
 }
 
-/* .likes-post{
-  padding: 18.38px 24.65px 17.15px 14.7px;
-} */
 .likes-post span {
   margin-right: 2.45px;
 }
 
 .calc-likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 1.38px;
 }
 
 .likes-post,
 .comments-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -352,11 +397,8 @@ header .container {
 
 
 .main-img-conspiracy {
-  background: url(../images/main-conspiracy.jpg) 100% 100% no-repeat;
-  background-size: cover;
   max-width: 1024px;
   max-height: 684px;
-
   margin-bottom: 47px;
 }
 
@@ -374,14 +416,19 @@ header .container {
 
 .container-news-name {
   background-color: rgba(4, 15, 133, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 20px 0 23px;
-  margin-bottom: 39px;
 }
 
 .news-name-conspiracy {
-  padding-bottom: 39px;
+  position: absolute;
+  bottom: 39px;
+  width: 100%;
 }
 
 .logo-news {
@@ -392,7 +439,7 @@ header .container {
   font-size: 38.47px;
   line-height: 46.89px;
   font-family: 'Montserrat-semiBold';
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .header-news-conspiracy {
@@ -491,6 +538,8 @@ header .container {
 }
 
 .p-sche-v2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -514,6 +563,8 @@ header .container {
 
 .drug-hosp-name-logo,
 .drug-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -578,9 +629,16 @@ header .container {
 }
 
 .container-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo-form {
@@ -600,7 +658,6 @@ header .container {
 .subtitle-form {
   color: #4D443A;
   font-size: 14px;
-  margin-bottom: 20px;
 }
 
 .attention-form {
@@ -619,8 +676,13 @@ header .container {
 }
 
 .form-section-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 10px;
 }
 
@@ -661,31 +723,449 @@ header .container {
   position: fixed;
   top: 0px;
   z-index: 10000;
+  display: none;
 }
 
 .pop-up-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
 }
 
-.pop-up-content{
+.pop-up-content {
   max-width: 400px;
-  background-color: #F5F3F1;
+  background-color: var(--main-bg-color);
   border-radius: 10px;
   padding: 20px;
 }
-.pop-up-header{
+
+.pop-up-header {
   text-align: center;
   margin-bottom: 20px;
 }
-.pop-up-btn{
+
+.pop-up-img-product img {
+  display: block;
+  margin: 20px auto;
+}
+
+
+.pop-up-btn {
   font-size: 18px;
   text-transform: uppercase;
   background-color: #0299FF;
-  color:var(--main-bg-color);
+  color: var(--main-bg-color);
   padding: 10px 10px;
   border-radius: 5px;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.pop-up-btn::after,
+.pop-up-btn::before {
+  content: '';
+  position: absolute;
+  width: 54px;
+  height: 100%;
+  border-radius: 0% 50% 50% 0;
+  background-color: #015AA3;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.pop-up-btn::after {
+  left: -90px;
+  top: 0;
+}
+
+.pop-up-btn::before {
+  background: url('../images/arr-btn.svg') 100% 100% no-repeat;
+  top: calc(50% - 12px);
+  left: -30px;
+  width: 24px;
+  height: 24px;
+  z-index: 10;
+}
+
+
+.pop-up-btn:hover {
+  padding-left: 34px;
+}
+
+.pop-up-btn:hover::after {
+  left: -20px;
+}
+
+.pop-up-btn:hover::before {
+  left: 0;
+}
+
+#timer {
+  margin: 10px 0;
+}
+
+
+
+
+@media screen and (max-width:1090px) {
+  .date-logo {
+    padding: 15px 0 15px 10px;
+  }
+
+  .logo {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 175px;
+  }
+
+  .date {
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  .main-person {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .main-person img {
+    height: 425px;
+  }
+
+  header,
+  .main-title,
+  .fb-header {
+    margin-bottom: 20px;
+  }
+
+  .title-29 {
+    font-size: 20.99px;
+    line-height: 25.34px;
+  }
+
+  .title-25,
+  .text-25,
+  .doctor-coom-strong {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .copy-date {
+    font-size: 16px;
+    max-width: 269px;
+  }
+
+  .subtitle-post {
+    margin: 30px 0;
+  }
+
+  .main-img-conspiracy {
+    margin-bottom: 30px;
+  }
+
+  .header-news-conspiracy {
+    margin-bottom: 25px;
+  }
+
+  .text-news-conspiracy {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .mtb-v2,
+  .mtb-v5,
+  .mtb-v6,
+  .mtb-v7,
+  .mtb-v8 {
+    margin: 25px 0;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .logo-doctor-main {
+    max-width: 220px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .name-doctor {
+    font-size: 25px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .about-doctor {
+    font-size: 25px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    bottom: 15px;
+    left: 15px;
+  }
+
+  .position-doctor {
+    font-size: 18.77px;
+    line-height: 19px;
+  }
+
+  .news-name {
+    font-size: 25px;
+    line-height: 26px;
+  }
+
+  .container-news-name span {
+    max-width: 70px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .main-person {
+    right: -100px;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  .logo {
+    margin-bottom: 99px;
+  }
+
+  .main-person img {
+    height: 349px;
+  }
+
+  .user-post {
+    margin-bottom: 10px;
+  }
+
+  .img-user img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .name-user,
+  .date-post {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .first-post {
+    margin-bottom: 15px;
+  }
+
+  .text-style-post {
+    font-size: 15px;
+  }
+
+  .second-post {
+    margin-bottom: 25px;
+  }
+
+  .reaction-post {
+    padding: 8.38px 12.65px 7.15px 7.7px;
+    font-size: 14px;
+  }
+
+  .post {
+    padding: 8.37px 10.83px;
+  }
+
+  .container-post {
+    border: 4.57px solid
+  }
+
+  .news-name {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .container-news-name span {
+    max-width: 45px;
+  }
+
+  .logo-news {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-29 {
+    font-size: 18.99px;
+    line-height: 20.34px;
+  }
+
+  .title-25 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .copy-date {
+    font-size: 14px;
+    max-width: 235px;
+  }
+
+  .logo-doctor-main {
+    max-width: 170px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .name-doctor {
+    font-size: 20px;
+    line-height: 22px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .about-doctor {
+    max-width: 333px;
+  }
+
+  .about-doctor,
+  .name-doctor {
+    bottom: 15px;
+    left: 15px;
+  }
+
+  .position-doctor {
+    font-size: 15.77px;
+    line-height: 17px;
+
+  }
+
+  .hosp-name {
+    font-size: 18px;
+    line-height: 19px;
+    max-width: 317px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .subtitle-form {
+    text-align: center;
+  }
+
+  .pop-up-header {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .pop-up-img-product img {
+    max-width: 150px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .logo {
+    margin-bottom: 68px;
+    max-width: 150px;
+  }
+
+  .main-person {
+    right: -65px;
+  }
+
+  .main-person img {
+    height: 240px;
+  }
+
+  .date {
+    font-size: 25px;
+    line-height: 27px;
+  }
+
+  .name-user,
+  .date-post {
+    font-size: 16px;
+  }
+
+  .reaction-post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .likes-post {
+    margin-bottom: 15px;
+  }
+
+  .logo-doctor-main {
+    max-width: 100px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .news-name {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .container-news-name span {
+    max-width: 35px;
+  }
+
+  .logo-news {
+    max-width: 60px;
+  }
+
+  .container-news-name {
+    padding: 0 10px;
+  }
+
+  .about-doctor {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .name-doctor {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .position-doctor {
+    font-size: 14px;
+  }
+
+  .about-doctor {
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .drug-hosp-name-logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .hosp-logo,
+  .hosp-name {
+    margin-bottom: 15px;
+  }
+
+  .header-form {
+    text-align: center;
+  }
 }
